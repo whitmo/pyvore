@@ -2,9 +2,9 @@
  pyvore
 ========
 
-A multichannel chat room for `gevent-socketio <https://github.com/sontek/gevent-socketio>`_ written in pyramid.
-
-  
+A multichannel chat room for `gevent-socketio
+<https://github.com/sontek/gevent-socketio>`_ written in `pyramid
+<https://github.com/Pylons/pyramid>`_.
 
 
 Getting Started
@@ -20,11 +20,11 @@ Dev install steps:
 
 - install pyvore from source::
 
-  pip install -e git+https://github.com/whitmo/pyvore.git#egg=pyvore
+    pip install -e git+https://github.com/whitmo/pyvore.git#egg=pyvore
 
 - install pyvores un-released dependencies::
 
-  pip install -r $VIRTUAL_ENV/src/pyvore/dev.txt
+    pip install -r $VIRTUAL_ENV/src/pyvore/dev.txt
 
 
 Go to the source directory::
@@ -33,11 +33,11 @@ Go to the source directory::
 
 - populate the database::
 
-  populate_pyvore development.ini
+    populate_pyvore development.ini
 
 - Profit!::
   
-  pserve development.ini
+    pserve development.ini
 
 
 Credit
