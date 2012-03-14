@@ -2,9 +2,9 @@
  pyvore
 ========
 
-A multichannel chat room for gevent-socketio written in pyramid::
+A multichannel chat room for `gevent-socketio <https://github.com/sontek/gevent-socketio>`_ written in pyramid.
 
-  https://github.com/sontek/gevent-socketio
+  
 
 
 Getting Started
