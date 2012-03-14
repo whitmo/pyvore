@@ -1,0 +1,12 @@
+#*
+*~
+*.egg-info
+*.pyc
+/.coverage
+/dist
+*_flymake.py
+*#*
+.DS_Store
+/build
+/temp
+*.db

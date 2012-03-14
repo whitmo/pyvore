@@ -1,13 +1,13 @@
 import os
 
-from setuptools import setup, find_packages
+from setuptools import setup
+from setuptools import find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.txt')).read()
+README = open(os.path.join(here, 'README.rst')).read()
 CHANGES = open(os.path.join(here, 'CHANGES.txt')).read()
 
-requires = [
-]
+requires = open('requirements.txt').read().split('\n')
 
 setup(name='pyvore',
       version='0.0',
@@ -19,7 +19,7 @@ setup(name='pyvore',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         ],
-      author='',
+      author='abourget/sontek',
       author_email='',
       url='',
       keywords='web wsgi bfg pylons pyramid',
