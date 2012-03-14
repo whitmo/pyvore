@@ -1,5 +1,9 @@
-pyvore README
-==================
+========
+ pyvore
+========
+
+A gevent-socketio example.
+
 
 Getting Started
 ---------------
@@ -11,4 +15,10 @@ Getting Started
 - $venv/bin/populate_pyvore development.ini
 
 - $venv/bin/pserve development.ini
+
+
+About
+-----
+
+Written by John Anderson and A. Bourget at pycon 2012
 
