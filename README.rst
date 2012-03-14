@@ -2,23 +2,46 @@
  pyvore
 ========
 
-A gevent-socketio example.
+A multichannel chat room for gevent-socketio written in pyramid::
+
+  https://github.com/sontek/gevent-socketio
 
 
 Getting Started
 ---------------
 
-- cd <directory containing this file>
-
-- $venv/bin/python setup.py develop
-
-- $venv/bin/populate_pyvore development.ini
-
-- $venv/bin/pserve development.ini
+You'll need python 2.6.5 or better and a redis instance running on the
+default port.
 
 
-About
------
+Dev install steps:
+
+- create/activate virtualenv.
+
+- install pyvore from source::
+
+  pip install -e git+https://github.com/whitmo/pyvore.git#egg=pyvore
+
+- install pyvores un-released dependencies::
+
+  pip install -r $VIRTUAL_ENV/src/pyvore/dev.txt
+
+
+Go to the source directory::
+
+  cd $VIRTUAL_ENV/src/pyvore
+
+- populate the database::
+
+  populate_pyvore development.ini
+
+- Profit!::
+  
+  pserve development.ini
+
+
+Credit
+------
 
 Written by John Anderson and A. Bourget at pycon 2012
 
